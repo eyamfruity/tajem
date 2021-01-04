@@ -1,6 +1,6 @@
 //Плавный скролл
 $("a[href^='#']").click(function(){
-    let _href = $(this).attr("href");
+    var _href = $(this).attr("href");
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;
 });
@@ -9,5 +9,6 @@ $("a[href^='#']").click(function(){
 let burger = $('.nav-burger');
 burger.on('click', function(){
     burger.toggleClass('nav-burger_active');
-    $('.nav__list').fadeToggle(150);
+    $('.nav__list').toggleClass('nav__list_active');
+    // $('.nav__list').fadeToggle();
 });
