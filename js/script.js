@@ -9,5 +9,5 @@ $("a[href^='#']").click(function(){
 let burger = $('.nav-burger');
 burger.on('click', function(){
     burger.toggleClass('nav-burger_active');
-    $('.nav__list').fadeToggle();
+    $('.nav__list').fadeToggle(150);
 });
