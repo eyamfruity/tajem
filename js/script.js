@@ -10,5 +10,4 @@ let burger = $('.nav-burger');
 burger.on('click', function(){
     burger.toggleClass('nav-burger_active');
     $('.nav__list').toggleClass('nav__list_active');
-    // $('.nav__list').fadeToggle();
 });
